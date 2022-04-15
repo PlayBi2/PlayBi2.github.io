@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .warning{
+            background-color: lightyellow;
+            padding: 25px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">HTML Style</p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                HTML Style
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Thuộc tính <b>style</b> được sử dụng để thêm kiểu vào một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
+                </li>
+            </ul>
+            <p class="infor-name">
+                Ví dụ:
+            </p>
+            <img src="./img/anh5.png" alt="" class="page-infor__img">
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Sử dụng thẻ style
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Thiết lập kiểu của một phần tử HTML, có thể được thực hiện với <b>style</b> thuộc tính.
+                </li>
+                <li class="property-item">
+                    Thuộc tính <b>style</b> cú pháp sau:
+                </li>
+                <img src="./img/anh2.png" alt="" class="page-infor__img">
+                <li class="property-item">
+                    <b>property</b> là một thuộc tính CSS. <b>value</b> là một giá trị CSS. 
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor border">
+            <div class="warning">
+                <p>Bạn sẽ tìm hiểu thêm về CSS ở phần sau của hướng dẫn này.</p>
+            </div>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Màu nền
+            </p>
+
+            <ul class="list-property">
+                <li class="property-item">
+                    Thuộc tính CSS <b>background-color</b> xác định màu nền cho một phần tử HTML.
+                </li>
+                <img src="./img/style3.png" alt="" class="page-infor__img">
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Văn bản màu
+            </p>
+
+            <ul class="list-property">
+                <li class="property-item">
+                    Thuộc tính CSS <b>color</b> xác định màu văn bản cho một phần tử HTML:
+                </li>
+                <img src="./img/style5.png" alt="" class="page-infor__img">
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Phông chữ
+            </p>
+
+            <ul class="list-property">
+                <li class="property-item">
+                    Thuộc tính CSS <b>font-family</b> xác định phông chữ được sử dụng cho một phần tử HTML:
+                </li>
+                <img src="./img/style2.png" alt="" class="page-infor__img">
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Cỡ chữ
+            </p>
+
+            <ul class="list-property">
+                <li class="property-item">
+                    Thuộc tính CSS <b>font-size</b> xác định kích thước văn bản cho một phần tử HTML:
+                </li>
+                <img src="./img/style1.png" alt="" class="page-infor__img">
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Căn chỉnh văn bản
+            </p>
+
+            <ul class="list-property">
+                <li class="property-item">
+                    Thuộc tính CSS <b>text-align</b> xác định căn chỉnh văn bản theo chiều ngang cho một phần tử HTML:
+                </li>
+                <img src="./img/style4.png" alt="" class="page-infor__img">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

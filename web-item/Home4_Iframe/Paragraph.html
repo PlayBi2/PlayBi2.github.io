@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;
+            text-decoration: none;
+            color: white;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">HTML Paragraph</p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                HTML paragraphs
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    The HTML &lt;p&gt; element defines a paragraph.
+                </li>
+                <li class="property-item">
+                    A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                HTML Display
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    You cannot be sure how HTML will be displayed.
+                </li>
+                <li class="property-item">
+                    Large or small screens, and resized windows will create different results.
+                </li>
+                <li class="property-item">
+                    With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+                </li>
+                <li class="property-item">
+                    The browser will automatically remove any extra spaces and lines when the page is displayed:
+                </li>
+            </ul>
+            <img src="./img/Paragraph.png" alt="" class="page-infor__img">
+        </div>
+        
+    </div>
+</body>
+</html>

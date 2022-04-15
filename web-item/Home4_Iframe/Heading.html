@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .warning{
+            background-color: lightyellow;
+            padding: 25px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">HTML Headings (Thẻ tiêu đề)</p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                HTML Headings
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Heading là tiêu đề hoặc phụ đề mà bạn muốn hiển thị trên trang web.
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Tiêu đề
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Các tiêu đề HTML được xác định bằng các thẻ <b>&lt;h1&gt;</b> đến <b>&lt;h6&gt;</b>.
+                </li>
+                <li class="property-item">
+                    <b>&lt;h1&gt;</b> xác định tiêu đề quan trọng nhất. <b>&lt;h6&gt;</b> xác định tiêu đề ít quan trọng nhất.
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor border">
+            <img src="./img/Heading-img.png" alt="" class="page-infor__img">
+            <div class="warning">
+                <p><b>Lưu ý:</b> Lưu ý: Trình duyệt tự động thêm một số khoảng trắng (lề) trước và sau một tiêu đề.</p>
+            </div>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Tiêu đề quan trọng
+            </p>
+
+            <ul class="list-property">
+                <li class="property-item">
+                    Các công cụ tìm kiếm sử dụng các tiêu đề để lập chỉ mục cấu trúc và nội dung của các trang web của bạn.
+                </li>
+                <li class="property-item">
+                    Người dùng thường lướt qua một trang theo các tiêu đề của nó. Điều quan trọng là sử dụng các tiêu đề để hiển thị cấu trúc tài liệu.
+                </li>
+                <li class="property-item">
+                    <b>&lt;h1&gt;</b>các tiêu đề nên được sử dụng cho các tiêu đề chính, tiếp theo là <b>&lt;h2&gt;</b>các tiêu đề, sau đó là các tiêu đề ít quan trọng hơn <b>&lt;h3&gt;</b>, v.v.
+                </li>
+            </ul>
+            <div class="warning">
+                <p><b>Lưu ý:</b> Chỉ sử dụng tiêu đề HTML cho các tiêu đề. Không sử dụng tiêu đề để làm cho văn bản <b>LỚN</b> hoặc <b>in đậm</b>.</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
