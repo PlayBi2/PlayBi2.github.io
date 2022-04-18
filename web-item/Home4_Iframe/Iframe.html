@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;  
+            text-decoration: none;
+            color: white;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        img{
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">HTML Iframess</p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Iframes là gì?
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    iframe được sử dụng để hiển thị một trang trong một trang web.
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Cú pháp iframe
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Thẻ <b>&lt;iframe&gt;</b> chỉ định một khung nội tuyến.
+                </li>
+                <li class="property-item">
+                    Khung nội tuyến được sử dụng để nhúng tài liệu khác vào tài liệu HTML hiện tại.
+                </li>
+            </ul>
+            <img src="./img/iframe1.png" alt="" class="page-infor__img">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Đặt Chiều cao và Chiều rộng
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Sử dụng thuộc tính <b>height</b> và <b>width</b> để chỉ định kích thước của iframe..
+                </li>
+                <li class="property-item">
+                    Chiều cao và chiều rộng được chỉ định bằng pixel theo mặc định:
+                </li>
+                <li class="property-item">
+                    Hoặc bạn có thể thêm <b>style</b> thuộc tính và sử dụng CSS <b>height</b> và <b>width</b> các thuộc tính:
+                </li>
+            </ul>
+            <img src="./img/iframe2.png" alt="">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Xóa đường viền
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Theo mặc định, iframe có đường viền xung quanh nó.
+                </li>
+                <li class="property-item">
+                    Để xóa đường viền, hãy thêm <b>style</b> thuộc tính và sử dụng thuộc tính CSS border:
+                </li>
+            </ul>
+            <img src="./img/iframe3.png" alt="">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Target link
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Một iframe có thể được sử dụng làm khung mục tiêu cho một liên kết.
+                </li>
+                <li class="property-item">
+                    Thuộc <b>target</b> tính của liên kết phải tham chiếu đến thuộc tính <b>name</b> của iframe:
+                </li>
+            </ul>
+            <img src="./img/iframe4.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

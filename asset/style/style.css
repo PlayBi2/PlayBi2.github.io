@@ -1,0 +1,103 @@
+
+
+/* Content CSS */
+#content{
+    padding-top: 80px;
+}
+#content .course__container{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.course__container .course-item{
+    width: 30%;
+    margin-top: 20px;
+    position: relative;
+    transition: bottom 0.2s;
+    bottom: 0;
+}
+.course__container .course-item:hover{
+    bottom: 4px;
+}
+.bot-course{
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);  
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user .info{
+    margin-left: 10px;
+}
+.user-img{
+    width: 15%;
+}
+.user-img img{
+    width: 100%;
+}
+.member-img p{
+    margin: 10px 0;
+}
+.member-img img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 164px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+.course-free{
+    color: green;
+}
+.member-name{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 12px 0;
+    font-weight: 450;
+}
+.member-name:hover{
+    color:#0B71BF;
+}
+/* .member-name p{
+    color: orange;
+} */
+.item{
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.next-page{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.next-page a{
+    color: black;
+}
+.course__img-link{
+    position: relative;
+    display: block;
+}
+
+
+/* Image css */
+#banner{
+    display: block;
+    
+    padding-top: 55px;
+}
+#banner img{
+    width: 100%;
+    display: block;
+    
+}
+
+
+

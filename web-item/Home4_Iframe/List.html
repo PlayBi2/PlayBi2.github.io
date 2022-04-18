@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;  
+            text-decoration: none;
+            color: white;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        img{
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">HTML Lists</p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Lists là gì?
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Danh sách HTML cho phép các nhà phát triển web nhóm một tập hợp các mục có liên quan trong danh sách.
+                </li>
+                
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                Ví dụ về danh sách trong HTML
+            </p>
+            <img src="./img/Lists.png" alt="" class="page-infor__img">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Danh sách HTML không theo thứ tự
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Một danh sách không có thứ tự bắt đầu bằng thẻ <b>&lt;ul&gt;</b>. Mỗi mục danh sách bắt đầu bằng thẻ <b>&lt;li&gt;</b>.
+                </li>
+                <li class="property-item">
+                    Các mục trong danh sách sẽ được đánh dấu bằng dấu đầu dòng (vòng tròn nhỏ màu đen) theo mặc định:
+                </li>
+            </ul>
+            <img src="./img/Lists2.png" alt="">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Danh sách HTML có thứ tự
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Một danh sách có thứ tự bắt đầu bằng thẻ <b>&lt;ol&gt;</b>. Mỗi mục danh sách bắt đầu bằng thẻ <b>&lt;li&gt;</b>.
+                </li>
+                <li class="property-item">
+                    Các mục trong danh sách sẽ được đánh dấu bằng số theo mặc định:
+                </li>
+            </ul>
+            <img src="./img/Lists3.png" alt="">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Danh sách mô tả HTML
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    Danh sách mô tả là danh sách các thuật ngữ, với mô tả của từng thuật ngữ.
+                </li>
+                <li class="property-item">
+                    Thẻ <b>&lt;dl&gt;</b> xác định danh sách mô tả, thẻ <b>&lt;dl&gt;</b> xác định thuật ngữ (tên) và thẻ <b>&lt;dd&gt;</b> mô tả từng thuật ngữ:
+                </li>
+            </ul>
+            <img src="./img/Lists4.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

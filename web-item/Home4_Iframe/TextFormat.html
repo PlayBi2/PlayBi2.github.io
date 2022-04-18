@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;  
+            text-decoration: none;
+            color: white;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        .page-infor .page-infor__slogan{
+            margin: 10px 0;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">HTML Text Formatting</p>
+        <p class="title__slogan border">
+            HTML contains several elements for defining text with a special meaning.
+        </p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                HTML Formatting Elements
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    &lt;b&gt; - Bold text
+                </li>
+                <li class="property-item">
+                    &lt;strong&gt; - Important text
+                </li>
+                <li class="property-item">
+                    &lt;i&gt; - Italic text
+                </li>
+                <li class="property-item">
+                    &lt;em&gt; - Emphasized text
+                </li>
+                <li class="property-item">
+                    &lt;mark&gt; - Marked text
+                </li>
+                <li class="property-item">
+                    &lt;small&gt; - Smaller text
+                </li>
+                <li class="property-item">
+                    &lt;del&gt; - Deleted text
+                </li>
+                <li class="property-item">
+                    &lt;ins&gt; - Inserted text
+                </li>
+                <li class="property-item">
+                    &lt;sub&gt; - Subscript text
+                </li>
+                <li class="property-item">
+                    &lt;sup&gt; - Superscript text
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                HTML &lt;b&gt; and &lt;strong&gt; Elements
+            </p>
+            <p class="page-infor__slogan">The HTML &lt;b&gt; element defines bold text, without any extra importance.</p>
+            <img src="./img/FormatIMG1.png" alt="" class="page-infor__img">
+            <p class="page-infor__slogan">The HTML &lt;strong&gt; element defines text with strong importance. The content inside is typically displayed in bold.</p>
+            <img src="./img/FormatIMG2.png" alt="">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                HTML &lt;i&gt; and &lt;em&gt; Elements
+            </p>
+            <p class="page-infor__slogan">
+                The HTML &lt;i&gt; element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+            </p>
+            <p>Tip: The &lt;i&gt; tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p>
+            <img src="./img/FormatIMG3.png" alt="">
+            <p class="page-infor__slogan">
+                The HTML &lt;em&gt; element defines emphasized text. The content inside is typically displayed in italic.
+            </p>
+            <p>Tip: A screen reader will pronounce the words in &lt;em&gt; with an emphasis, using verbal stress.</p>
+            <img src="./img/FormatIMG4.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
