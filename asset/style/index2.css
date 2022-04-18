@@ -1,0 +1,56 @@
+.log-in__modal{
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    color: #333;
+    width: 150px;
+    background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+    border-radius: 2px;
+    display: none;
+    transition: opacity linear 0.4s;
+    opacity: 0;
+}
+.log-in__modal li{
+    padding: 8px 10px;
+    line-height: 25px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.log-in__modal li:hover{
+    color:#0B71BF;
+}
+.log-in:hover .log-in__modal{
+    display: block;
+    opacity: 1;
+}
+
+.header-section .log-in > i{
+    padding: 0 8px;
+    line-height: 55px;
+}
+#setting-web{
+    display: none;
+}
+/* Banner css */
+#banner-member{
+    background-color: #F58C89;
+    padding-top:55px;
+    
+}
+#banner-member .banner-section{
+    display: flex;
+    height: 80px;
+    
+}
+#banner-member .banner-section .banner-img{
+    width: 10%;
+
+}
+#banner-member img{
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .title__slogan{
+            margin: 5px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;  
+            text-decoration: none;
+            color: #FFF;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">HTML Links</p>
+        <p class="title__slogan">
+            Links are found in nearly all web pages. Links allow users to click their way from page to page.
+        </p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                HTML Links - Hyperlinks
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    HTML links are hyperlinks.
+                </li>
+                <li class="property-item">
+                    You can click on a link and jump to another document.
+                </li>
+                <li class="property-item">
+                    When you move the mouse over a link, the mouse arrow will turn into a little hand.
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                HTML Links - Syntax
+            </p>
+            <p class="infor-slogan">
+                The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:
+            </p>
+            <img src="./img/LinkImg.png" alt="" class="page-infor__img">
+            <ul class="list-property">
+                <li class="property-item">
+                    The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.
+                </li>
+                <li class="property-item">
+                    The link text is the part that will be visible to the reader.
+                </li>
+                <li class="property-item">
+                    Clicking on the link text, will send the reader to the specified URL address.
+                </li>
+            </ul>
+            <img src="./img/LinkImg2.png" alt="">
+            <p class="infor__slogan">
+                By default, links will appear as follows in all browsers:
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    An unvisited link is underlined and blue
+                </li>
+                <li class="property-item">
+                    A visited link is underlined and purple
+                </li>
+                <li class="property-item">
+                    An active link is underlined and red
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                HTML Links - The target Attribute
+            </p>
+            <p class="infor-slogan">
+                By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+            </p>
+            <p>The target attribute specifies where to open the linked document.</p>
+            <p>The target attribute can have one of the following values:</p>
+            <ul class="list-property">
+                <li class="property-item">
+                    _self - Default. Opens the document in the same window/tab as it was clicked
+                </li>
+                <li class="property-item">
+                    _blank - Opens the document in a new window or tab
+                </li>
+                <li class="property-item">
+                    _parent - Opens the document in the parent frame
+                </li>
+                <li class="property-item">
+                    _top - Opens the document in the full body of the window
+                </li>
+            </ul>
+            <img src="./img/LinkImg3.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

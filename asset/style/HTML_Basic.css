@@ -1,0 +1,40 @@
+/* content css */
+#content{
+    min-height: 500px;
+    padding-top: 60px;
+}
+#content .content__navigation{
+    width: 25%;
+    background-color: #fff;
+    padding: 20px 10px;
+}
+#content .content__navigation .nav-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+#content .list-selection{
+    list-style-type: none;
+    font-size: 15px;
+    width: 100%;
+}
+#content .list-selection a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 5px;
+    border-radius: 2px;
+}
+.list-selection .selection-item{
+    border-top: 0.5px solid rgba(0,0,0,0.1);
+}
+.frame-infor{
+    width: 75%;
+    min-height: 1000px;
+    padding-left: 10px;
+}
+.selection-item:hover a{
+    background-color: #0e8ff2cc;
+    color: white !important;
+}

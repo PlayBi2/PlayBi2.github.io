@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            font-size: 16px;
+            font-family: 'Roboto', 'Arial';
+            padding: 20px 0;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .control-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .control-page a{
+            display: block;
+            padding: 8px 20px;
+            background-color: #0B71BF;  
+            text-decoration: none;
+            color: white;
+            border-radius: 2px;
+        }
+        .page-infor{
+            margin-left: 40px;
+        }
+        .page-infor .infor-name{
+            font-size: 18px;
+            font-weight: 550;
+            margin: 10px 0; 
+            text-transform: uppercase;
+        }
+        .page-infor .list-property{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        .page-infor .list-property li{
+            margin: 5px 0;
+        }
+        .border{
+            padding: 10px 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p class="title">Giới thiệu HTML</p>
+        <div class="control-page">
+            <a href="" class="pre-page">Bài trước</a>
+            <a href="" class="next-page">Bài tiếp</a>
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                What is HTML?
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    What is HTML? HTML stands for Hyper Text Markup Language
+                </li>
+                <li class="property-item">
+                    HTML is the standard markup language for creating Web pages
+                </li>
+                <li class="property-item">
+                    HTML describes the structure of a Web page
+                </li>
+                <li class="property-item">
+                    HTML consists of a series of elements
+                </li>
+                <li class="property-item">
+                    HTML elements tell the browser how to display the content
+                </li>
+                <li class="property-item">
+                    HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+                </li>
+            </ul>
+        </div>
+        <div class="page-infor">
+            <p class="infor-name">
+                A Simple HTML Document
+            </p>
+            <img src="./img/GioiThieuHTML1.png" alt="" class="page-infor__img">
+        </div>
+        <div class="page-infor border">
+            <p class="infor-name">
+                Example Explained
+            </p>
+            <ul class="list-property">
+                <li class="property-item">
+                    The &lt; !DOCTYPE html &gt; declaration defines that this document is an HTML5 document
+                </li>
+                <li class="property-item">
+                    The &lt; html &gt; element is the root element of an HTML page
+                </li>
+                <li class="property-item">
+                    The &lt;head&gt; element contains meta information about the HTML page
+                </li>
+                <li class="property-item">
+                    The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+                </li>
+                <li class="property-item">
+                    The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+                </li>
+                <li class="property-item">
+                    The &lt;h1&gt; element defines a large heading
+                </li>
+                <li class="property-item">
+                    The &lt;p&gt; element defines a paragraph
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

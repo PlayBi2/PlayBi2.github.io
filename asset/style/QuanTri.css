@@ -1,0 +1,67 @@
+.setting-course{
+    position: absolute;
+    top: 15px;
+    right:1px;
+    background-color: rgb(14, 142, 242);
+    text-align: right;
+    display: none;
+    animation: Setting-course-amimation linear 0.5s;
+}
+
+.setting-course i{
+    display: block;
+    padding: 12px 10px;
+    color: white;   
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+.setting-course i:hover{
+    color: #333;
+    cursor: pointer;
+}
+.course-item:hover .setting-course{
+    display: block;
+}
+
+.log-in__modal{
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    color: #333;
+    width: 150px;
+    background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+    border-radius: 2px;
+    display: none;
+    transition: opacity linear 0.4s;
+    opacity: 0;
+}
+.log-in__modal li{
+    padding: 8px 10px;
+    line-height: 25px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.log-in__modal li:hover{
+    color:#0B71BF;
+}
+.log-in:hover .log-in__modal{
+    display: block;
+    opacity: 1;
+}
+#User-name{
+    margin-left: 5px;
+}
+@keyframes Setting-course-amimation {
+    from{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
