@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --text-color: #333;
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #014c8f;
+    --red-color: #d50000;
+    --height-header: 61px;
+}

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Trang chủ</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/style/style.css">
-    <link rel="stylesheet" href="./asset/style/base.css">
-    <link rel="icon" href="../asset/Image/Logo-web/logo2.jpg">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,400 +17,1426 @@
 
 <body>
     <div id="main">
-        <!-- Header -->
         <div id="header">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="header-section">
-                    <div class="nav">
-                        <ul>
-                            <li><a href="./index.html" class="logo">TP-Learning</a></li>
-                            <li><a href="./index.html" class="header__hover"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
-                            <li><a href="" class="header__hover"><i class="fa-solid fa-book"></i>Khóa học</a></li>
-                            <li class="header__language">
-                                <a href="" class="header__hover"><i class="fa-solid fa-globe"></i>Ngôn ngữ</a>
-                                <div class="language-link">
-                                    <a href="" class="vietnamese">Tiếng việt</a>
-                                    <a href="" class="english">Tiếng anh</a>
+                    <div class="header__menu">
+                        <i class="fa-solid fa-bars"></i>
+                        <p>Menu</p>
+
+                    </div>
+                    <div class="header__logo">
+                        <a href="#"><img src="./asset/img/mew-shoes.png" alt=""></a>
+                    </div>
+                    <div class="header__category">
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href=""><i class="fa-regular fa-circle-user"></i></a>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider -->
+        <div id="slider"></div>
+
+        <!-- content -->
+        <div id="content">
+            <div class="grid wide">
+                <!-- sort bar -->
+                <ul class="sort-bar">
+                    <li class="sort-bar__item">
+                        <img src="./asset/img/sort-bar/box.png" alt="" class="sort-bar__icon">
+                        <div class="sort-bar__text">
+                            <p class="sort-bar__title">10000+ Sản phẩm</p>
+                            <p class="sort-bar__slogan">400+ Thương hiệu</p>
+                        </div>
+                    </li>
+                    <li class="sort-bar__item">
+                        <img src="./asset/img/sort-bar/smile.png" alt="" class="sort-bar__icon">
+                        <div class="sort-bar__text">
+                            <p class="sort-bar__title">2 triệu khách hàng</p>
+                            <p class="sort-bar__slogan">Tin tưởng mua sắm</p>
+                        </div>
+                    </li>
+                    <li class="sort-bar__item">
+                        <img src="./asset/img/sort-bar/like.png" alt="" class="sort-bar__icon">
+                        <div class="sort-bar__text">
+                            <p class="sort-bar__title">Hàng chính hãng</p>
+                            <p class="sort-bar__slogan">100% chính hãng</p>
+                        </div>
+                    </li>
+                    <li class="sort-bar__item">
+                        <img src="./asset/img/sort-bar/car.png" alt="" class="sort-bar__icon">
+                        <div class="sort-bar__text">
+                            <p class="sort-bar__title">Giao hàng miễn phí</p>
+                            <p class="sort-bar__slogan">Miễn phí nội thành</p>
+                        </div>
+                    </li>
+                    <li class="sort-bar__item">
+                        <img src="./asset/img/sort-bar/turn.png" alt="" class="sort-bar__icon">
+                        <div class="sort-bar__text">
+                            <p class="sort-bar__title">Đổi hàng 07 ngày</p>
+                            <p class="sort-bar__slogan">Hoàn toàn miễn phí</p>
+                        </div>
+                    </li>
+                    <li class="sort-bar__item">
+                        <img src="./asset/img/sort-bar/vip.png" alt="" class="sort-bar__icon">
+                        <div class="sort-bar__text">
+                            <p class="sort-bar__title">Khách VIP</p>
+                            <p class="sort-bar__slogan">Ưu đãi hấp dẫn</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- bar -->
+                <div class="bar-product">
+                    <div class="row">
+                        <a href="" class="product-item row no-gutters col l-4">
+                            <div class="product-item__2lv">
+                                <img src="./asset/img/product/Men's shoes.jpg" alt="">
+                                <div class="product-item__2lv--infor">
+                                    <p class="title">Giày nam</p>
+                                    <p class="slogan">
+                                        6 sản phẩm
+                                    </p>
                                 </div>
+                                <div class="curtain1"></div>
+                                <div class="curtain2"></div>
+                            </div>
+                            <div class="product-item__2lv">
+                                <img src="./asset/img/product/Women's shoes.jpg" alt="">
+                                <div class="product-item__2lv--infor">
+                                    <p class="title">Giày nữ</p>
+                                    <p class="slogan">
+                                        9 sản phẩm
+                                    </p>
+                                </div>
+                                <div class="curtain1"></div>
+                                <div class="curtain2"></div>
+                            </div>
+                        </a>
+                        <a href="" class="product-item row no-gutters col l-4">
+                            <div class="product-item__2lv">
+                                <img src="./asset/img/product/basketball shoes.jpg" alt="">
+                                <div class="product-item__2lv--infor">
+                                    <p class="title">Giày bóng rổ</p>
+                                    <p class="slogan">
+                                        5 sản phẩm
+                                    </p>
+                                </div>
+                                <div class="curtain1"></div>
+                                <div class="curtain2"></div>
+                            </div>
+                        </a>
+                        <a href="" class="product-item row no-gutters col l-4">
+                            <div class="product-item__2lv">
+                                <img src="./asset/img/product/soccer shoes.jpg" alt="">
+                                <div class="product-item__2lv--infor">
+                                    <p class="title">Giày bóng đá</p>
+                                    <p class="slogan">
+                                        9 sản phẩm
+                                    </p>
+                                </div>
+                                <div class="curtain1"></div>
+                                <div class="curtain2"></div>
+                            </div>
+                            <div class="product-item__2lv">
+                                <img src="./asset/img/product/running shoes.jpg" alt="">
+                                <div class="product-item__2lv--infor">
+                                    <p class="title">Giày chạy</p>
+                                    <p class="slogan">
+                                        10 sản phẩm
+                                    </p>
+                                </div>
+                                <div class="curtain1"></div>
+                                <div class="curtain2"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- list product -->
+                <div class="list-product__hot">
+                    <div class="list-product__hot--name">
+                        Sản phẩm nổi bật
+                        <div class="curtain1"></div>
+                        <div class="curtain2"></div>
+                    </div>
+                    <div class="list-product">
+                        <div class="control-left"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="control-right"><i class="fa-solid fa-angle-right"></i></div>
+                        <div class="product-hot row">
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ULTRABOOTS 21 - BLACK - H.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ULTRABOOST 21 - Black -V.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Black
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/untraboot-blue/ULTRABOOTS 21 - BLUE- H.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/untraboot-blue/ULTRABOOST 21 - Blue - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Blue
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-grey/ULTRABOOTS 21 - GREY- H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-grey/ULTRABOOTS 21 - Grey - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Grey
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-orange/ULTRABOOST 21 - Screaming Orange - H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-orange/ULTRABOOST 21 - Screaming Orange - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Screaming Orange
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Solar Yellow
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ULTRABOOTS 21 - BLACK - H.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ULTRABOOST 21 - Black -V.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Black
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ULTRABOOTS 21 - BLACK - H.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ULTRABOOST 21 - Black -V.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Black
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ULTRABOOTS 21 - BLACK - H.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ULTRABOOST 21 - Black -V.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Black
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-product__hot">
+                    <div class="list-product__hot--name">
+                        Bán chạy nhất 2020
+                        <div class="curtain1"></div>
+                        <div class="curtain2"></div>
+                    </div>
+                    <div class="list-product">
+                        <div class="control-left"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="control-right"><i class="fa-solid fa-angle-right"></i></div>
+                        <div class="product-hot row">
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/Lebron-red/redH.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/Lebron-red/redV.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Black
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/Jordan1-blue/blueh.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/Jordan1-blue/bluev.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Blue
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/Nike-white/whiteh.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/Nike-white/whitev.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Grey
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/Jordan1-black/blackh.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/Jordan1-black/blackv.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Screaming Orange
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/Blazer-white/whitepinkh.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/Blazer-white/whitepinkv.jpg" alt=""
+                                            class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Solar Yellow
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List member -->
+                <div class="list-member row">
+                    <div class="col l-3">
+                        <a href="" class="member-item">
+                            <img src="./asset/img/Member/m_bn_2_1.jpg" alt="">
+                            <div class="curtain1"></div>
+                            <div class="curtain2"></div>
+                        </a>
+                    </div>
+                    <div class="col l-6">
+                        <a href="" class="member-item img-mid">
+                            <img src="./asset/img/Member/m_bn_2_2.jpg" alt="">
+                            <div class="curtain1"></div>
+                            <div class="curtain2"></div>
+                        </a>
+                    </div>
+                    <div class="col l-3">
+                        <a href="" class="member-item">
+                            <img src="./asset/img/Member/m_bn_2_1.jpg" alt="">
+                            <div class="curtain1"></div>
+                            <div class="curtain2"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- album -->
+                <div class="album">
+                    <div class="album__name">
+                        bộ sưu tập ultraboots
+                        <div class="curtain1"></div>
+                        <div class="curtain2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-9">
+                            <div class="album__content">
+                                <div class="album-section">
+                                    <a href="" class="album__banner">
+                                        <img src="./asset/img/Album/bg_only_item.png" alt="">
+                                        <div class="curtain1"></div>
+                                        <div class="curtain2"></div>
+                                    </a>
+                                    <div class="album__infor">
+                                        <a href="" class="album__title">giày ultraboots 21</a>
+                                        <p class="album__slogan">
+                                            Hàng loạt bản mẫu. Hàng loạt cải tiến. Hàng loạt thử nghiệm. Đồng hành cùng
+                                            chúng tôi trên hành trình tìm kiếm sự hòa hợp đỉnh cao giữa trọng lượng, sự
+                                            êm ái và độ đàn hồi. Ultraboost 21. Đón chào...
+                                        </p>
+                                        <div class="album__price">
+                                            <div class="album__price-new">
+                                                5.100.000đ
+                                            </div>
+                                            <div class="album__cost">
+                                                5.499.000đ
+                                            </div>
+                                        </div>
+                                        <div class="album__gift">
+                                            <div class="gift__icon">
+                                                <i class="fa-solid fa-gift"></i>Quà tặng
+                                            </div>
+                                            <div class="gift__text">
+                                                <div class="gift-item">
+                                                    <i class="fa-solid fa-check"></i><span>MIỄN PHÍ</span> giao hàng
+                                                    toàn quốc
+                                                </div>
+                                                <div class="gift-item">
+                                                    <i class="fa-solid fa-check"></i><span>Tặng 1 áo thun</span> thời
+                                                    trang 190k
+                                                </div>
+                                                <div class="gift-item">
+                                                    <i class="fa-solid fa-check"></i><span>Giao ngay</span> 2H tại Hà
+                                                    Nội
+                                                </div>
+                                                <div class="gift-item">
+                                                    <i class="fa-solid fa-check"></i><span>Không lấy quà vui lòng liên
+                                                        hệ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="album__sticker">
+                                    <img src="./asset/img/Album/sale-bagde.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <div class="album__sub-nav">
+                                <ul>
+                                    <li class="album-item">
+                                        <a href="" class="album-item__link">
+                                            <img src="./asset/img/product-hot/Blazer-white/whitepinkh.jpg" alt="">
+                                        </a>
+                                        <div class="album-item__infor">
+                                            <a href="">GIÀY ULTRABOOST 21 - Cloud White / Gold Metallic</a>
+                                            <div class="album-item__price">
+                                                <div class="price-sale">5.000.000đ</div>
+                                                <div class="cost">6.500.000đ</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="album-item">
+                                        <a href="" class="album-item__link">
+                                            <img src="./asset/img/product-hot/Jordan1-black/blackh.jpg" alt="">
+                                        </a>
+                                        <div class="album-item__infor">
+                                            <a href="">GIÀY ULTRABOOST 21 - Cloud White / Gold Metallic</a>
+                                            <div class="album-item__price">
+                                                <div class="price-sale">5.000.000đ</div>
+                                                <div class="cost">6.500.000đ</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="album-item">
+                                        <a href="" class="album-item__link">
+                                            <img src="./asset/img/product-hot/Jordan1-blue/blueh.jpg" alt="">
+                                        </a>
+                                        <div class="album-item__infor">
+                                            <a href="">GIÀY ULTRABOOST 21 - Cloud White / Gold Metallic</a>
+                                            <div class="album-item__price">
+                                                <div class="price-sale">5.000.000đ</div>
+                                                <div class="cost">6.500.000đ</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="album-item">
+                                        <a href="" class="album-item__link">
+                                            <img src="./asset/img/product-hot/Lebron-red/redH.jpg" alt="">
+                                        </a>
+                                        <div class="album-item__infor">
+                                            <a href="">GIÀY ULTRABOOST 21 - Cloud White / Gold Metallic</a>
+                                            <div class="album-item__price">
+                                                <div class="price-sale">5.000.000đ</div>
+                                                <div class="cost">6.500.000đ</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="album-item">
+                                        <a href="" class="album-item__link">
+                                            <img src="./asset/img/product-hot/Nike-white/whiteh.jpg" alt="">
+                                        </a>
+                                        <div class="album-item__infor">
+                                            <a href="">GIÀY ULTRABOOST 21 - Cloud White / Gold Metallic</a>
+                                            <div class="album-item__price">
+                                                <div class="price-sale">5.000.000đ</div>
+                                                <div class="cost">6.500.000đ</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="album-item">
+                                        <a href="" class="album-item__link">
+                                            <img src="./asset/img/product-hot/ULTRABOOTS 21 - BLACK - H.jpg" alt="">
+                                        </a>
+                                        <div class="album-item__infor">
+                                            <a href="">GIÀY ULTRABOOST 21 - Cloud White / Gold Metallic</a>
+                                            <div class="album-item__price">
+                                                <div class="price-sale">5.000.000đ</div>
+                                                <div class="cost">6.500.000đ</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-product__hot">
+
+                    <div class="list-product__hot--name">
+                        Sneaker thương hiệu
+                        <div class="curtain1"></div>
+                        <div class="curtain2"></div>
+                    </div>
+                    <div class="list-product">
+                        <ul class="list-brands">
+                            <li class="brands-item">
+                                <a href="">Vans</a>
                             </li>
-                            <li class="header__notifi">
-                                <a href="" class="header__hover"><i class="fa-regular fa-bell"></i>Thông báo</a>
-                                <div class="notifi__section w-90">
-                                    <p class="notifi-title">Thông báo</p>
-                                    <a href="" class="noti-item">
-                                        <div class="noti-img">
-                                            <img src="./asset/Image/Course-item/img3.jpg" alt="">
-                                        </div>
-                                        <div class="noti-infor">
-                                            <p class="noti-name">Đề cương môn học</p>
-                                            <p class="slogan">Đề cương gồm đề thi của các năm trước, bộ câu hỏi ôn tập, tổng ôn lý thuyết</p>
-                                        </div>
+                            <li class="brands-item">
+                                <a href="">nike</a>
+                            </li>
+                            <li class="brands-item">
+                                <a href="">converse</a>
+                            </li>
+                            <li class="brands-item">
+                                <a href="">new balance</a>
+                            </li>
+                            <li class="brands-item">
+                                <a href="">clarks</a>
+                            </li>
+                        </ul>
+                        <div class="product-hot row product-brands">
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ULTRABOOTS 21 - BLACK - H.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ULTRABOOST 21 - Black -V.jpg" alt=""
+                                            class="product-hot__img2">
                                     </a>
-                                    <a href="" class="noti-item">
-                                        <div class="noti-img">
-                                            <img src="./asset/Image/Course-item/img3.jpg" alt="">
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Black
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
                                         </div>
-                                        <div class="noti-infor">
-                                            <p class="noti-name">Đề cương môn học</p>
-                                            <p class="slogan">Đề cương gồm đề thi của các năm trước, bộ câu hỏi ôn tập, tổng ôn lý thuyết</p>
-                                        </div>
-                                    </a>
-                                    <a href="" class="noti-item">
-                                        <div class="noti-img">
-                                            <img src="./asset/Image/Course-item/img3.jpg" alt="">
-                                        </div>
-                                        <div class="noti-infor">
-                                            <p class="noti-name">Đề cương môn học</p>
-                                            <p class="slogan">Đề cương gồm đề thi của các năm trước, bộ câu hỏi ôn tập, tổng ôn lý thuyết</p>
-                                        </div>
-                                    </a>
-                                    <a href="./web-item/Index2.html" class="next-noti">Xem thêm</a>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/untraboot-blue/ULTRABOOTS 21 - BLUE- H.jpg" alt=""
+                                            class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/untraboot-blue/ULTRABOOST 21 - Blue - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Blue
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-grey/ULTRABOOTS 21 - GREY- H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-grey/ULTRABOOTS 21 - Grey - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Grey
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-orange/ULTRABOOST 21 - Screaming Orange - H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-orange/ULTRABOOST 21 - Screaming Orange - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Screaming Orange
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Solar Yellow
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Solar Yellow
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Solar Yellow
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="product-hot__item">
+                                    <a href="" class="product-hot__img-link">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - H.jpg"
+                                            alt="" class="product-hot__img1">
+                                        <img src="./asset/img/product-hot/ultraboots-white/ULTRABOOST - 21 - Cloud White - V.jpg"
+                                            alt="" class="product-hot__img2">
+                                    </a>
+                                    <div class="product-hot__infor">
+                                        <p class="product-hot__title">
+                                            GIÀY ULTRABOOST 21 - Solar Yellow
+                                        </p>
+                                        <div class="product-hot__price">
+                                            <div class="price-new">
+                                                5.000.000đ
+                                            </div>
+                                            <div class="price-fake">
+                                                6.500.000đ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="percent__icon">
+                                        23%
+                                    </div>
+                                    <div class="hot__icon">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- feed back-->
+            <div class="feed-back">
+                <div class="feed-back__title">
+                    đánh giá khách hàng
+                </div>
+                <div class="feed-back__section">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-4">
+                                <a href="" class="feed-back__member">
+                                    <div class="feed-back__member--img">
+                                        <img src="./asset/img/feed-back/member3.jpg" alt="">
+                                    </div>
+                                    <div class="feed-back__member--vote">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="feed-back__member--name">
+                                        Yui mikami
+                                    </div>
+                                    <div class="feed-back__member--comment">
+                                        Adidas Stan Smith là một trong những đôi giày thời đại mang đến cho mình cảm
+                                        giác hứng khởi mỗi khi xỏ chân vào. Các bạn chưa biết chọn giày ở đâu có thể
+                                        tham khảo giày của Mew Shoes nhé.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="feed-back__member">
+                                    <div class="feed-back__member--img">
+                                        <img src="./asset/img/feed-back/people_s_2.webp" alt="">
+                                    </div>
+                                    <div class="feed-back__member--vote">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="feed-back__member--name">
+                                        Yui mikami
+                                    </div>
+                                    <div class="feed-back__member--comment">
+                                        Adidas Stan Smith là một trong những đôi giày thời đại mang đến cho mình cảm
+                                        giác hứng khởi mỗi khi xỏ chân vào. Các bạn chưa biết chọn giày ở đâu có thể
+                                        tham khảo giày của Mew Shoes nhé.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4">
+                                <a href="" class="feed-back__member">
+                                    <div class="feed-back__member--img">
+                                        <img src="./asset/img/feed-back/people_s_3.webp" alt="">
+                                    </div>
+                                    <div class="feed-back__member--vote">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="feed-back__member--name">
+                                        Yui mikami
+                                    </div>
+                                    <div class="feed-back__member--comment">
+                                        Adidas Stan Smith là một trong những đôi giày thời đại mang đến cho mình cảm
+                                        giác hứng khởi mỗi khi xỏ chân vào. Các bạn chưa biết chọn giày ở đâu có thể
+                                        tham khảo giày của Mew Shoes nhé.
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news -->
+            <div class="news">
+                <div class="grid wide">
+                    <div class="news-section">
+                        <div class="news-title">
+                            Tin tức
+                            <div class="curtain1"></div>
+                            <div class="curtain2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col l-3">
+                                <div class="news-item">
+                                    <a href="" class="news-img">
+                                        <img src="./asset/img/news/space-pack-ultraboost-feat.jpg" alt="">
+                                        <div class="curtain1"></div>
+                                        <div class="curtain2"></div>
+                                    </a>
+                                    <div class="news-infor">
+                                        <a href="" class="news-name">
+                                            Giày ultra boost phản quang luôn 'cháy hàng' khi vừa lên kệ
+                                        </a>
+                                        <div class="news-time">
+                                            20/03/2021
+                                        </div>
+                                        <div class="news-slogan">
+                                            Tiếp nối thành công của các thế hệ phiên bản Ultra Boost, Adidas lần lượt
+                                            cho ra mắt các...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="news-item">
+                                    <a href="" class="news-img">
+                                        <img src="./asset/img/news/air-jordan-4-fiba-red-ci1184-617-1-19b6e94c82c843518bf219f48f376e25-master.jpg"
+                                            alt="">
+                                        <div class="curtain1"></div>
+                                        <div class="curtain2"></div>
+                                    </a>
+                                    <div class="news-infor">
+                                        <a href="" class="news-name">
+                                            Giày ultra boost phản quang luôn 'cháy hàng' khi vừa lên kệ
+                                        </a>
+                                        <div class="news-time">
+                                            20/03/2021
+                                        </div>
+                                        <div class="news-slogan">
+                                            Tiếp nối thành công của các thế hệ phiên bản Ultra Boost, Adidas lần lượt
+                                            cho ra mắt các...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="news-item">
+                                    <a href="" class="news-img">
+                                        <img src="./asset/img/news/yeezy-700.jpg" alt="">
+                                        <div class="curtain1"></div>
+                                        <div class="curtain2"></div>
+                                    </a>
+                                    <div class="news-infor">
+                                        <a href="" class="news-name">
+                                            Giày ultra boost phản quang luôn 'cháy hàng' khi vừa lên kệ
+                                        </a>
+                                        <div class="news-time">
+                                            20/03/2021
+                                        </div>
+                                        <div class="news-slogan">
+                                            Tiếp nối thành công của các thế hệ phiên bản Ultra Boost, Adidas lần lượt
+                                            cho ra mắt các...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="news-item">
+                                    <a href="" class="news-img">
+                                        <img src="./asset/img/news/546043.jpg" alt="">
+                                        <div class="curtain1"></div>
+                                        <div class="curtain2"></div>
+                                    </a>
+                                    <div class="news-infor">
+                                        <a href="" class="news-name">
+                                            Giày ultra boost phản quang luôn 'cháy hàng' khi vừa lên kệ
+                                        </a>
+                                        <div class="news-time">
+                                            20/03/2021
+                                        </div>
+                                        <div class="news-slogan">
+                                            Tiếp nối thành công của các thế hệ phiên bản Ultra Boost, Adidas lần lượt
+                                            cho ra mắt các...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- brands -->
+            <div class="global-brands">
+                <div class="grid wide">
+                    <div class="global-brands__section">
+                        <div class="global-brands__title">
+                            Thương hiệu
+                            <div class="curtain1"></div>
+                            <div class="curtain2"></div>
+                        </div>
+                        <ul class="list-brands">
+                            <li class="global-brands__item">
+                                <img src="./asset/img/global-brands/brand1.webp" alt="">
+                            </li>
+                            <li class="global-brands__item">
+                                <img src="./asset/img/global-brands/brand2.webp" alt="">
+                            </li>
+                            <li class="global-brands__item">
+                                <img src="./asset/img/global-brands/brand3.webp" alt="">
+                            </li>
+                            <li class="global-brands__item">
+                                <img src="./asset/img/global-brands/brand4.webp" alt="">
+                            </li>
+                            <li class="global-brands__item">
+                                <img src="./asset/img/global-brands/brand5.webp" alt="">
                             </li>
                         </ul>
                     </div>
-                    <div class="user">
-                        <a href="" class="search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm
-                        </a>
-                        <a class="log-in">
-                            <i class="fa-solid fa-user"></i>
-                            <p class="log-in__Sign-in">Đăng nhập</p>
-                            <p id="User-name"></p>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- banner -->
-        <a href="#" id="banner">
-            <img src="./asset/Image/Image-slider/banner-gif2.gif" alt="Img">
-        </a>
-        <!-- Content -->
-        <div id="content" class="w-90">
-            <h4>Các khóa học phổ biến </h4>
-            <div class="course__container w-90">
-                <div class="course-item">
-                    <div class="item">
-                        <div class="member-img w-90">
-                            <a href="./web-item/HTML_Basic.html" class="course__img-link">
-                                <img src="./asset/Image/Course-item/Course-HTML.jpg" alt="">
-                                <div class="curtain1"></div>
-                                <div class="curtain2"></div>
-                            </a>
-                            <a href="./web-item/HTML_Basic.html" class="member-name">
-                                HTML cơ bản
-                            </a>
-                        </div>
-
-                        <div class="bot-course w-90">
-                            <div class="user">
-                                <div class="user-img">
-                                    <img src="./asset/Image/User/User1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <p>Nguyễn Văn A</p>
-                                </div>
-                            </div>
-                            <div class="course-free">
-                                <p>free</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-item">
-                    <div class="item">
-                        <div class="member-img w-90">
-                            <a href="" class="course__img-link">
-                                <img src="./asset/Image/Course-item/CSSTutorial.png" alt="">
-                                <div class="curtain1"></div>
-                                <div class="curtain2"></div>
-                                <div class="coming-soon">
-                                    <p>Coming Soon</p>
-                                </div>
-                            </a>
-                            <a href="#" class="member-name">
-                                CSS cơ bản
-                            </a>
-                        </div>
-
-                        <div class="bot-course w-90">
-                            <div class="user">
-                                <div class="user-img">
-                                    <img src="./asset/Image/User/User1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <p>Nguyễn Văn A</p>
-                                </div>
-                            </div>
-                            <div class="course-free">
-                                <p>free</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-item">
-                    <div class="item">
-                        <div class="member-img w-90">
-                            <a href="" class="course__img-link">
-                                <img src="./asset/Image/Course-item/Course-JS.png" alt="">
-                                <div class="curtain1"></div>
-                                <div class="curtain2"></div>
-                                <div class="coming-soon">
-                                    <p>Coming Soon</p>
-                                </div>
-                            </a>
-                            <a href="" class="member-name">
-                                JavaScript cơ bản
-                            </a>
-                        </div>
-
-                        <div class="bot-course w-90">
-                            <div class="user">
-                                <div class="user-img">
-                                    <img src="./asset/Image/User/User1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <p>Nguyễn Văn A</p>
-                                </div>
-                            </div>
-                            <div class="course-free">
-                                <p>free</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-item">
-                    <div class="item">
-                        <div class="member-img w-90">
-                            <a href="" class="course__img-link">
-                                <img src="./asset/Image/Course-item/Course-word.jpg" alt="">
-                                <div class="curtain1"></div>
-                                <div class="curtain2"></div>
-                                <div class="coming-soon">
-                                    <p>Coming Soon</p>
-                                </div>
-                            </a>
-                            <a href="" class="member-name">
-                                Word cơ bản
-                            </a>
-                        </div>
-
-                        <div class="bot-course w-90">
-                            <div class="user">
-                                <div class="user-img">
-                                    <img src="./asset/Image/User/User1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <p>Nguyễn Văn A</p>
-                                </div>
-                            </div>
-                            <div class="course-free">
-                                <p>free</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-item">
-                    <div class="item">
-                        <div class="member-img w-90">
-                            <a href="" class="course__img-link">
-                                <img src="./asset/Image/Course-item/Course-powerpoint.png" alt="">
-                                <div class="curtain1"></div>
-                                <div class="curtain2"></div>
-                                <div class="coming-soon">
-                                    <p>Coming Soon</p>
-                                </div>
-                            </a>
-                            <a href="" class="member-name">
-                                Powerpoint cơ bản
-                            </a>
-                        </div>
-
-                        <div class="bot-course w-90">
-                            <div class="user">
-                                <div class="user-img">
-                                    <img src="./asset/Image/User/User1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <p>Nguyễn Văn A</p>
-                                </div>
-                            </div>
-                            <div class="course-free">
-                                <p>free</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-item">
-                    <div class="item">
-                        <div class="member-img w-90">
-                            <a href="" class="course__img-link">
-                                <img src="./asset/Image/Course-item/Course-Excel.png" alt="">
-                                <div class="curtain1"></div>
-                                <div class="curtain2"></div>
-                                <div class="coming-soon">
-                                    <p>Coming Soon</p>
-                                </div>
-                            </a>
-                            <a href="" class="member-name">
-                                Excel cơ bản
-                            </a>
-                        </div>
-
-                        <div class="bot-course w-90">
-                            <div class="user">
-                                <div class="user-img">
-                                    <img src="./asset/Image/User/User1.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <p>Nguyễn Văn A</p>
-                                </div>
-                            </div>
-                            <div class="course-free">
-                                <p>free</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="next-page">
-                <a href="http://127.0.0.1:5500/web-item/home3.html">Xem thêm</a>
-            </div>
-        </div>
-        <!-- Navigation -->
-        <div class="bar w-90">
-            <h4>Các thành viên năng động</h4>
-            <div class="bar__member">
-                <div class="user__vip">
-                    <img src="./asset/Image/User/img4.jpg" alt="" class="user__avatar">
-                    <div class="user__vip-info">
-                        <p class="user-name">Nguyễn Văn A</p>
-                        <p class="user-cmt">6 bài đăng</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
+        <!-- footer -->
         <div id="footer">
-            <div class="grid">
-                <div class="footer-section">
-                    <div class="intro">
-                        <div class="logo">
-                            <p>TP-Learning</p>
-                        </div>
-                        <p class="footer__solgan">TP-Learning là hệ thống học thiết kế website trực tuyến hàng đầu Việt
-                            Nam.</p>
-                        <div class="footer-icon">
-                            <a href="https://www.facebook.com/nvthang02" target="_blank"><i
-                                    class="fa-brands fa-facebook-square icon-info"></i></a>
-                            <a href="https://www.instagram.com/playbi02/" target="_blank"><i
-                                    class="fa-brands fa-instagram icon-info"></i></a>
-                            <a href="https://www.youtube.com/channel/UCZOFVvb53-BIfx5D3VcNN_A" target="_blank"><i
-                                    class="fa-brands fa-youtube icon-info"></i></a>
-                            <a href="https://twitter.com/PlayBi01" target="_blank"><i
-                                    class="fa-brands fa-twitter-square icon-info"></i></a>
+            <div class="footer__heading">
+                <div class="footer__title">
+                    hệ thống cửa hàng mew shoes trên toàn quốc
+                </div>
+                <a href="" class="footer__link">
+                    Hệ thống 10 showroom
+                </a>
+            </div>
+            <div class="footer__body">
+                <div class="grid wide">
+                    <div class="footer__section">
+                        <div class="row">
+                            <div class="col l-4">
+                                <div class="footer__add">
+                                    <div class="footer-title title-prime">
+                                        Liên hệ
+                                    </div>
+                                    <ul>
+                                        <li class="shop-name">
+                                            Mew Shoes
+                                        </li>
+                                        <li>
+                                            Địa chỉ: Ladeco Building, 266 Doi Can Street, Ba Dinh District, Hanoi.
+                                        </li>
+                                        <li>
+                                            <span>Email:</span> <a href="mailto:support@sapo.vn">support@sapo.vn</a>
+                                        </li>
+                                        <li>
+                                            <span>Số điện thoại:</span><a href="tel: 1900 6750"> 1900 6750</a>
+                                        </li>
+                                        <li>
+                                            <img src="./asset/img/footer/payment-1.webp" alt="">
+                                            <img src="./asset/img/footer/payment-2.webp" alt="">
+                                            <img src="./asset/img/footer/payment-3.webp" alt="">
+                                            <img src="./asset/img/footer/payment-4.webp" alt="">
+                                        
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-8">
+                                <div class="row">
+                                    <div class="col l-3">
+                                        <div class="footer-title">
+                                            Kênh bán hàng
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">Shopee</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sendo</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Zalo</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Lazada</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Tiki</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="footer-title">
+                                            Tìm hiểu thêm
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">Về Mew Shoes</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Chương trình khuyến mại</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Hướng dẫn đặt hàng</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Hướng dẫn chọn size</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Tin tức</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="footer-title">
+                                            Chính sách
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">Chính sách bán hàng</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Chính sách hoàn hàng</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Chính sách vận chuyển</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Chính sách cộng tác viên</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Chính sách bảo hành</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="footer-title">
+                                            Sản phẩm
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">Sản phẩm nổi bật</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bộ sưu tập mới</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bộ sưu tập mới 2020</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sản phẩm bán chạy</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sản phẩm khuyến mại</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="visit">
-                        <div class="web-info">
-                            <h2>Thông tin</h2>
-                            <a href="">
-                                Tác giả
-                            </a>
-                            <a href="">
-                                Điều khoản sử dụng
-                            </a>
-                        </div>
-                        <div class="web-shared">
-                            <h2>Liên kết</h2>
-                            <a href="https://forms.gle/UEvZJoWYXr4txELQ7" target="_blank">Báo cáo lỗi.</a>
-                            <a href="https://forms.gle/UEvZJoWYXr4txELQ7" target="_blank">Đóng góp ý tưởng.</a>
-                        </div>
-                        <div class="web-donate">
-                            <h2>Ủng hộ chúng tôi</h2>
-                            <a href="" target="_blank">
-                                momo
-                            </a>
-                            <a href="" target="_blank">
-                                Play Duo
-                            </a>
-                            <a href="" target="_blank">
-                                Paypal
-                            </a>
-                            <a href="" target="_blank">
-                                3100220125470-AgriBank
-                            </a>
-                            <a href="" target="_blank">
-                                19037127222012-Techcombank
-                            </a>
-                        </div>
+                    <div class="footer__copy-right">
+                        © Bản quyền thuộc về <a href="">MewTheme.</a> Cung cấp bởi Sapo.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="sign-in__modal">
-        <div class="modal__bg sign-in__bg">
-            <i class="fa-solid fa-xmark icon-close"></i>
-            <div class="clear"></div>
-            <div class="modal__section">
-                <div class="sign-in__header">
-                    <p>Đăng nhập</p>
-                </div>
-                <div class="sign-in__body">
-                    <input type="text" placeholder="Nhập tài khoản" id="input-username">
-                    <input type="password" placeholder="Nhập mật khẩu" id="input-password">
-                    <button type="submit" id="sign-in-BTN" onclick="login()">Đăng nhập</button>
-                </div>
-                <div class="sign-in__footer">
-                    <p class="footer__sign-up">Bạn chưa có tài khoản <a class="goto__sign-up">Đăng ký ngay</a></p>
-                    <div class="footer__app">
-                        <p>Hoặc đăng nhập với</p>
-                        <div class="footer__app-icon">
-                            <a href=""><i class="fa-brands fa-google"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook-square"></i></a>
-                            <a href=""><i class="fa-brands fa-apple"></i></a>
-                            <a href=""><i class="fa-brands fa-microsoft"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal__bg sign-up__bg">
-            <i class="fa-solid fa-xmark icon-close"></i>
-            <div class="clear"></div>
-            <div class="modal__section">
-                <div class="sign-in__header">
-                    <p>Đăng ký</p>
-                </div>
-                <div class="sign-in__body">
-                    <input type="text" placeholder="Nhập tên người dùng" id="New-username">
-                    <input type="text" placeholder="Nhập tài khoản" id="New-userID">
-                    <input type="password" placeholder="Nhập mật khẩu" class="New-password">
-                    <input type="password" placeholder="Nhập lại mật khẩu" class="New-password">
-                    <button type="submit" id="sign-up__btn">Đăng ký</button>
-                </div>
-                <div class="sign-in__footer">
-                    <p class="footer__rules">Tôi đồng ý với <a href="">Điều khoản dịch vụ</a></p>
-                    <p class="footer__rules goto__sign-in">Đi tới đăng nhập</p>
-                    <div class="footer__app">
-                        <p>Hoặc đăng nhập với</p>
-                        <div class="footer__app-icon">
-                            <a href=""><i class="fa-brands fa-google"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook-square"></i></a>
-                            <a href=""><i class="fa-brands fa-apple"></i></a>
-                            <a href=""><i class="fa-brands fa-microsoft"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="follow-page">
+        <a href="" class="tel-page"><i class="fa-solid fa-phone-volume"></i></a>
+        <a href="" class="chat-page"><i class="fa-brands fa-facebook-messenger"></i></a>
+        <a href="" class="follow-page"><i class="fa-brands fa-twitter"></i></a>
     </div>
+    <div id="sub-nav__modal">
+        <div class="sub-nav__section">
+            <div class="sub-nav__title">
+                <a href="">
+                    <img src="./asset/img/mew-shoes.png" alt="">
+                </a>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <ul class="sub-nav__intro">
+                <li class="sub-nav__intro--item">
+                    <a href="">
+                        <i class="fa-solid fa-store"></i>Cửa hàng online
+                    </a>
+                </li>
+                <li class="sub-nav__intro--item">
+                    <a href="">
+                        <i class="fa-solid fa-paper-plane"></i>Hướng dẫn mua hàng
+                    </a>
+                </li>
+                <li class="sub-nav__intro--item">
+                    <a href="">
+                        <i class="fa-solid fa-qrcode"></i>Thông tin thanh toán
+                    </a>
+                </li>
+                <li class="sub-nav__intro--item">
+                    <a href="">
+                        <i class="fa-solid fa-shop"></i>Chuỗi cửa hàng MewShoes
+                    </a>
+                </li>
+            </ul>
+            <ul class="sub-nav__body">
+                <li class="sub-nav__body--item">
+                    <a href="">Trang chủ</a>
+                </li>
+                <li class="sub-nav__body--item">
+                    <a href="">Giới thiệu</a>
+                </li>
+                <li class="sub-nav__body--item">
+                    <a href="">Sản phẩm</a>
+                </li>
+                <li class="sub-nav__body--item">
+                    <a href="">Giày thể thao</a>
+                </li>
+                <li class="sub-nav__body--item">
+                    <a href="">Giày chạy</a>
+                </li>
+                <li class="sub-nav__body--item">
+                    <a href="">Giày bóng rổ</a>
+                </li>
+                <li class="sub-nav__body--item">
+                    <a href="">Tin tức</a>
+                </li>
+                <li class="sub-nav__body--item">
+                    <a href="">Liên hệ</a>
+                </li>
+            </ul>
+            <div class="sub-nav__brand">
+                <a href="">
+                    <img src="./asset/img/sub-nav__modal/clarks.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./asset/img/sub-nav__modal/converse.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./asset/img/sub-nav__modal/nb.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./asset/img/sub-nav__modal/puma.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./asset/img/sub-nav__modal/v-color.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./asset/img/sub-nav__modal/vans.jpg" alt="">
+                </a>
+            </div>
+            <div class="sub-nav__footer">
+                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/09f3ae4474.js" crossorigin="anonymous"></script>
+    <script src="./asset/JS/main.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/09f3ae4474.js" crossorigin="anonymous"></script>
-<script src="./asset/JS/backend/login.js"></script>
-<script src="./asset/JS/font-end/Login_modal.js"></script>
-<!-- <script src="./asset/JS/backend/signup.js"></script> -->
+
 </html>
