@@ -82,6 +82,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    border-radius: 2px;
 }
 .sort-bar .sort-bar__item{
     display: flex;
@@ -226,6 +227,7 @@
     flex-wrap: nowrap;
     transform: translate3d(0px,0px,0px);
     transition: all linear 0.3s;
+    
 }
 .list-product .product-hot__item{
     display: block;
@@ -394,7 +396,7 @@
     transform: scale(1);
 }
 .album__content{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2px var(--primary-color);
     position: relative;
 }
 
@@ -695,7 +697,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px dotted transparent;
+    border: 2px dashed transparent;
     border-radius: 50%;
 }
 .feed-back__member--img img{
@@ -703,7 +705,7 @@
     border-radius: 50%;
 }
 .feed-back__member:hover .feed-back__member--img::before{
-    animation: rainbow linear 12s, FeedBackAnimation linear 12s;
+    animation: rainbow linear 12s infinite alternate, FeedBackAnimation linear 12s infinite alternate;
 }
 .feed-back .feed-back__member--vote{
     display: flex;
@@ -1098,6 +1100,9 @@
     border-top-left-radius: 25px;
     padding: 10px;
 }
+#follow-page .bag-icon{
+    display: none;
+}
 #follow-page::before{
     content:"";
     position: absolute;
@@ -1112,13 +1117,14 @@
 #follow-page a{
     display: block;
     font-size: 2.5rem;
-    color: var(--white-color);
-    border-radius: 50%;
-    border: 1px solid white;
+    text-align: center;
     margin: 0 5px;
 }
 #follow-page a i{
     padding: 8px;
+    color: var(--white-color);
+    border-radius: 50%;
+    border: 1px solid white;
 }
 #follow-page a .fa-solid.fa-phone-volume{
     transform: rotate(-30deg);
