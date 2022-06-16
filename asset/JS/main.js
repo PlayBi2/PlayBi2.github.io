@@ -6,6 +6,8 @@ var ListProduct = document.querySelectorAll('.product-hot.row');
 var ControlLefts = document.querySelectorAll('.control-left');
 var ControlRights = document.querySelectorAll('.control-right');
 var CurrentItem = [0];
+var SearchIcon = document.querySelector('.search-box i');
+
 // tạo một mảng chứa địa chỉ từng list-product để khi click sang trái phải k bị loạn địa
 // chỉ giữa các list-product
 var OpenSubNav = function () {
@@ -48,19 +50,13 @@ ControlRights.forEach(function(control,index){
     }
 })
 
-
-ListProduct.forEach((list) => {
-    ListScroll(list);
-})
-
 function ListScroll(list){
     let isMouseDown = false;
     let startX, scrollLeft;
     list.addEventListener('mousedown',function(e){
         isMouseDown = true;
-        startX = e.pageX - list.offsetX;
+        startX = e.pageX - list.offsetLeft;
         scrollLeft = list.scrollLeft;
-        console.log(list.offsetX)
     })
 
     list.addEventListener('mouseleave',function(){
@@ -75,13 +71,37 @@ function ListScroll(list){
         if(!isMouseDown){
             return;
         }
-        const x = e.pageX - list.offsetX;
-        const walk = x - startX;
+        let x = e.pageX - list.offsetLeft;
+        let walk = x - startX;
         list.scrollLeft = scrollLeft - walk;
-        console.log(walk)
+    })
+}
+
+function FeedBackOption(){
+    let PreBtn = document.querySelector('#previous');
+    let NextBtn = document.querySelector('#next');
+    let CurrentFeedBack = 0;
+    
+    PreBtn.addEventListener('change',function(){
+        let ListFeedBack = document.querySelector('.feed-back__section .row');
+        CurrentFeedBack += 400;
+        let x = CurrentFeedBack + 'px'
+        ListFeedBack.style.transform = `translateX(${x})`;
+    })
+    NextBtn.addEventListener('change',function(){
+        let ListFeedBack = document.querySelector('.feed-back__section .row');
+        CurrentFeedBack -= 400;
+        let x = CurrentFeedBack + 'px'
+        ListFeedBack.style.transform = `translateX(${x})`;
     })
 }
 
 
+FeedBackOption()
+
 MenuBtn.addEventListener('click', OpenSubNav);
 IconCloseSubNav.addEventListener('click', CloseSubNavP1);
+
+ListProduct.forEach(function(list){
+    ListScroll(list)
+})

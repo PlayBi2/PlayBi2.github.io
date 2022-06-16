@@ -12,6 +12,7 @@
     background-color: var(--white-color);
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
     z-index: 10;
+    overflow: hidden;
 }
 #header .header-section{
     display: flex;
@@ -36,7 +37,8 @@
 }
 .header-section .header__category{
     display: flex;
-    height: var(--height-header);
+    /* height: var(--height-header); */
+    align-items: center;
 }
 .header-section .header__category a{
     padding: 0 0.5rem;
@@ -44,16 +46,21 @@
     height: 100%;
     transition: transform linear 0.2s;
 }
-.header-section .header__category a:hover{
+.header-section i{
+    transition: all linear 0.2s;
+}
+.header-section .header__category a:hover i{
     transform: scale(1.2);
 }
+
+
 #header .header-section .header__logo img{
     display: block;
 }
 #header .header-section i{
     display: block;
     font-weight: 600;
-    line-height: var(--height-header);
+    /* line-height: var(--height-header); */
 }
 #header .header-section a{
     display: block;
@@ -227,7 +234,7 @@
     flex-wrap: nowrap;
     transform: translate3d(0px,0px,0px);
     transition: all linear 0.3s;
-    
+    padding: 5px 0;
 }
 .list-product .product-hot__item{
     display: block;
@@ -238,6 +245,7 @@
     transition: all linear 0.3s;
     
 }
+
 .list-product .product-hot__item .product-hot__img-link{
     display: block;
     position: absolute;
@@ -246,6 +254,13 @@
     right: 0;
     height: 220px;
     overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .list-product .product-hot__item .product-hot__img-link img{
     width: 100%;;
@@ -649,6 +664,13 @@
     padding-bottom: 20px;
     color: var(--white-color);
 }
+.feed-back__section .row{
+    flex-wrap: nowrap;
+    transition: all linear 0.5s;
+}
+.feed-back__section .grid.wide{
+    overflow: hidden;
+}
 .feed-back .feed-back__title{
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -734,7 +756,16 @@
 .feed-back .feed-back__member:hover::before{
     top: 0;
 }
-
+.feed-back__controls{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.feed-back__controls input{
+    display: block;
+    margin: 0 2.5px;
+    cursor: pointer;
+}
 
 /* news css */
 .news-section{
