@@ -60,12 +60,15 @@
 
     #header .header-section {
         justify-content: space-around;
+        height: var(--height-header);
     }
 
     .header__logo {
         margin-left: 20px;
     }
-
+    #header .header-section .header__menu{
+        margin-left: 10px;
+    }
     .sort-bar {
         justify-content: flex-start;
         overflow: hidden;

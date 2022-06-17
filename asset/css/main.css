@@ -90,6 +90,7 @@
     justify-content: space-around;
     margin-top: 50px;
     border-radius: 2px;
+    overflow: hidden;
 }
 .sort-bar .sort-bar__item{
     display: flex;
@@ -235,6 +236,7 @@
     transform: translate3d(0px,0px,0px);
     transition: all linear 0.3s;
     padding: 5px 0;
+    overflow: hidden;
 }
 .list-product .product-hot__item{
     display: block;
@@ -293,6 +295,10 @@
     overflow: hidden;
     -webkit-box-orient: vertical;
     opacity: 0.8;
+}
+.list-product .product-hot__item .product-hot__title:hover{
+    color: var(--primary-color);
+    cursor: pointer;
 }
 .list-product .product-hot__item .product-hot__price{
     font-size: 1.5rem;
@@ -636,6 +642,9 @@
     z-index: -1;
     opacity: 0.8;
 }
+.overflow{
+    overflow: hidden;
+}
 
 
 /* feed-back css */
@@ -667,6 +676,7 @@
 .feed-back__section .row{
     flex-wrap: nowrap;
     transition: all linear 0.5s;
+    overflow: hidden;
 }
 .feed-back__section .grid.wide{
     overflow: hidden;
@@ -1078,11 +1088,14 @@
 .sub-nav__body .sub-nav__body--item{
     margin: 1.5rem 0;
 }
-.sub-nav__body .sub-nav__body--item:hover a{
+.sub-nav__body .sub-nav__body--item i:hover{
+    color: var(--primary-color);
+}
+.sub-nav__body .sub-nav__body--item:hover > a{
     color: var(--primary-color)
 }
 .sub-nav__body .sub-nav__body--item a{
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
@@ -1121,6 +1134,44 @@
     transform: rotate(30deg) scale(1.1);
 }
 
+.sub-nav__lv2{
+    list-style-type: none;
+    /* border: 1px solid black; */
+    margin-left: 5px;
+    transition: all linear 0.5s;
+    transform-origin: top left;
+    /* transform: scale(0); */
+    animation: ScaleSubNav linear 0.5s;
+    position: absolute;
+}
+.sub-nav__lv2 .sub-nav__lv2--item a{
+    padding-top: 10px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 400;
+    text-transform: none;
+    opacity: 0.8;
+    display: block;
+}
+.sub-nav__lv2 .sub-nav__lv2--item a:hover{
+    color: var(--primary-color)
+}
+.open{
+    height: 140px;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+@keyframes ScaleSubNav {
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* follow page css */
 #follow-page{
     position: fixed;
     right: 0;
@@ -1147,7 +1198,7 @@
 
 #follow-page a{
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     margin: 0 5px;
 }
@@ -1160,6 +1211,37 @@
 #follow-page a .fa-solid.fa-phone-volume{
     transform: rotate(-30deg);
     animation: followpageAnimation ease 1.5s infinite ;
+}
+#follow-page .go-to-top{
+    position: absolute;
+    top:-65%;
+    right: 0;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: GoToTop linear 0.5s;
+    display:none;
+}
+#follow-page .go-to-top i{
+    border: none;
+    line-height: 20px;
+    font-size: 2rem;
+}
+.unhide{
+    display: block !important;
+}
+@keyframes GoToTop {
+    from{
+        transform: translateY(120%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes CloseAnimation {

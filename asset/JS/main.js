@@ -6,57 +6,48 @@ var ListProduct = document.querySelectorAll('.product-hot.row');
 var ControlLefts = document.querySelectorAll('.control-left');
 var ControlRights = document.querySelectorAll('.control-right');
 var CurrentItem = [0];
-var SearchIcon = document.querySelector('.search-box i');
-
+var FeedBackBlock = document.querySelector('.feed-back__section .row');
 // tạo một mảng chứa địa chỉ từng list-product để khi click sang trái phải k bị loạn địa
 // chỉ giữa các list-product
-var OpenSubNav = function () {
-    SubNav.style.display = 'block';
-}
-var CloseSubNavP1 = function () {
-    SubNav.style.display = 'none';
-}
-SubNav.onclick = function () {
-    SubNav.style.display = 'none';
-}
-Bar.onclick = function (ex) {
-    ex.stopPropagation();
-}
 
 
-ControlLefts.forEach(function(control,index){
-    
-    control.onclick = function () {
-
-        if (CurrentItem[index] < 0) {
-            CurrentItem[index] += 240;
-            ListProduct[index].style.transform = `translate3d(${CurrentItem[index]}px,0px,0px)`
-        }
+function MenuOption(){
+    function OpenSubNav() {
+        SubNav.style.display = 'block';
     }
-})
-ControlRights.forEach(function(control,index){
-    control.onclick = function () {
-        // kiểm tra xem vị trí mà ta nhấp sang trái-phải đã tồn tại trong mảng lưu địa chỉ chưa
-        // nếu chưa có thì thêm phần tử 0 tại vị trí đó rồi làm như bthg
-        if(index>CurrentItem.length-1){
-            CurrentItem.push(0);
-        }  
-        if (CurrentItem[index] > -720) {
-            CurrentItem[index] -= 240;
-            let x = CurrentItem[index] + 'px';
-            ListProduct[index].style.transform = `translate3d(${x},0px,0px)`
-        }
+    function CloseSubNavP1() {
+        SubNav.style.display = 'none';
+    }
+    SubNav.onclick = function () {
+        SubNav.style.display = 'none';
+    }
+    Bar.onclick = function (ex) {
+        ex.stopPropagation();
+    }
+    MenuBtn.addEventListener('click', OpenSubNav);
+    IconCloseSubNav.addEventListener('click', CloseSubNavP1);
+}
 
+let slider = document.querySelector('#slider');
+let GoToTopIcon = document.querySelector('.go-to-top');
+window.addEventListener('scroll',function(){
+    if(slider.getClientRects()[0].bottom < 661){
+        
+        GoToTopIcon.classList.add('unhide');
+    }
+    else{
+        GoToTopIcon.classList.remove('unhide')
     }
 })
 
-function ListScroll(list){
+
+function ListScroll(list,index){
     let isMouseDown = false;
-    let startX, scrollLeft;
+    let startX, scrollLeftX;
     list.addEventListener('mousedown',function(e){
         isMouseDown = true;
         startX = e.pageX - list.offsetLeft;
-        scrollLeft = list.scrollLeft;
+        scrollLeftX = list.scrollLeft;
     })
 
     list.addEventListener('mouseleave',function(){
@@ -73,35 +64,57 @@ function ListScroll(list){
         }
         let x = e.pageX - list.offsetLeft;
         let walk = x - startX;
-        list.scrollLeft = scrollLeft - walk;
+        list.scrollLeft = scrollLeftX - walk;
+        CurrentItem[index] = list.scrollLeft;
     })
 }
 
 function FeedBackOption(){
     let PreBtn = document.querySelector('#previous');
     let NextBtn = document.querySelector('#next');
-    let CurrentFeedBack = 0;
-    
+    let ListFeedBack = document.querySelector('.feed-back__section .row');
     PreBtn.addEventListener('change',function(){
-        let ListFeedBack = document.querySelector('.feed-back__section .row');
-        CurrentFeedBack += 400;
-        let x = CurrentFeedBack + 'px'
-        ListFeedBack.style.transform = `translateX(${x})`;
+        let x = ListFeedBack.scrollLeft;
+        ListFeedBack.scrollLeft = x - 400
     })
     NextBtn.addEventListener('change',function(){
-        let ListFeedBack = document.querySelector('.feed-back__section .row');
-        CurrentFeedBack -= 400;
-        let x = CurrentFeedBack + 'px'
-        ListFeedBack.style.transform = `translateX(${x})`;
+        let x = ListFeedBack.scrollLeft;
+        ListFeedBack.scrollLeft = x + 400
+    })
+}   
+
+function Control(list){
+    ControlLefts.forEach(function(control){
+        control.addEventListener('click',function(){
+            if(list.scrollLeft == 0){
+                return;
+            }
+            
+            let x = list.scrollLeft;
+            list.scrollLeft = x - 260;
+        })
+    })
+    ControlRights.forEach(function(control){
+        control.addEventListener('click',function(){
+            let x = list.scrollLeft;
+            list.scrollLeft = x + 260;
+        })
     })
 }
 
+// Điều hướng trái phải 
+ListProduct.forEach(function(list){
+    Control(list)
+})
 
-FeedBackOption()
-
-MenuBtn.addEventListener('click', OpenSubNav);
-IconCloseSubNav.addEventListener('click', CloseSubNavP1);
-
+// Scroll list 
 ListProduct.forEach(function(list){
     ListScroll(list)
 })
+
+// Scroll FeedBack
+ListScroll(FeedBackBlock)
+
+
+MenuOption() // Chức năng khi nhấn vào icon menu
+FeedBackOption() // Chức năng trong feed back
