@@ -761,6 +761,7 @@
     font-style: italic;
     line-height: 2.4rem;
     margin-top: 30px;
+    min-height: 120px;
 }
 .feed-back .feed-back__member:hover::before{
     top: 0;
