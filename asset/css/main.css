@@ -12,7 +12,11 @@
     background-color: var(--white-color);
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
     z-index: 10;
-    overflow: hidden;
+    /* overflow: hidden; */
+    transition: all linear 0.5s;
+}
+.down{
+    top: 45px !important;
 }
 #header .header-section{
     display: flex;
@@ -45,15 +49,46 @@
     margin: 0 0.5rem;
     height: 100%;
     transition: transform linear 0.2s;
+    position: relative;
 }
 .header-section i{
     transition: all linear 0.2s;
 }
-.header-section .header__category a:hover i{
+.header-section .header__category a:hover > i{
     transform: scale(1.2);
 }
-
-
+.user-option{
+    position: absolute;
+    top: 150%;
+    right: 0;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    border-radius: 5px;
+    transform-origin: 100% 0;
+    line-height: 30px;
+    font-size: 1.6rem;
+    width: 140px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    display: none;
+    animation: ScaleSubNav ease 0.5s;
+}
+.user-option::after{
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 20px;
+    background-color: transparent;
+    top: -13px;
+    right: 0;
+}
+.user-option .sign-in,
+.user-option .sign-up{
+    padding: 5px 10px;
+}
+.user-option .sign-in:hover,
+.user-option .sign-up:hover{
+    color: var(--primary-color);
+}
 #header .header-section .header__logo img{
     display: block;
 }
@@ -67,6 +102,52 @@
     text-decoration: none;
     color: var(--text-color);
 }
+/* search block */
+.search-block{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;    
+}
+.search-section{
+    position: fixed;
+    background-color: var(--white-color);
+    left: 0;
+    right: 0;
+    animation: slidedown ease 0.5s;
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 1.5rem;
+
+}
+.search-block input{
+    display: block;
+    width: 500px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);  
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-block p{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
 
 /* slider css */
 #slider{
@@ -136,12 +217,15 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-bottom: 15px;;
 }
 
 .bar-product .product-item img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     transition: all linear 0.5s;
     display: block;
     border-radius: 5px;
@@ -174,7 +258,7 @@
     opacity: 0;
 }
 .bar-product .product-item__2lv:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .bar-product .product-item__2lv:hover .product-item__2lv--infor{
     background-color: var(--primary-color);
@@ -1011,6 +1095,7 @@
     padding-left: 15px;
 }
 
+
 /* sub-nav modal */
 #sub-nav__modal{
     position: fixed;
@@ -1162,14 +1247,7 @@
 .rotate{
     transform: rotate(180deg);
 }
-@keyframes ScaleSubNav {
-    from{
-        transform:scale(0);
-    }
-    to{
-        transform: scale(1);
-    }
-}
+
 
 /* follow page css */
 #follow-page{
@@ -1193,7 +1271,6 @@
     border-width: 10px;
     border-style: solid;
     border-color: transparent transparent var(--primary-color) transparent;
-
 }
 
 #follow-page a{
@@ -1230,11 +1307,30 @@
     line-height: 20px;
     font-size: 2rem;
 }
+.hide{
+    display: none;
+}
 .unhide{
     display: block !important;
 }
-img{
-    user-select: none;
+
+/* .overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+} */
+
+@keyframes ScaleSubNav {
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 @keyframes GoToTop {
     from{
@@ -1265,7 +1361,14 @@ img{
         opacity: 1;
     }
 }
-
+@keyframes slidedown {
+    from{
+        top: -60px;
+    }
+    to{
+        top: 0;
+    }
+}
 
 @keyframes slider {
     0%{

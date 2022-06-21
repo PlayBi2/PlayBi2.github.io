@@ -2,6 +2,11 @@ var MenuBtn = document.querySelector('.header__menu'); // Icon menu trên thanh 
 var SubNav = document.querySelector('#sub-nav__modal'); // toàn bộ phần sub-nav khi nhấn vào menu-icon
 var IconCloseSubNav = document.querySelector('.sub-nav__title i'); // Icon close của sub-nav
 var Bar = document.querySelector('.sub-nav__section');
+var SearchInput = document.querySelector('.search-section')
+var SearchIcon = document.querySelector('.search-box i')
+var searchblock = document.querySelector('.search-block');;
+var header = document.querySelector('#header')
+var LogIn = document.querySelector('.login-btn')
 var ListProduct = document.querySelectorAll('.product-hot.row');
 var ControlLefts = document.querySelectorAll('.control-left');
 var ControlRights = document.querySelectorAll('.control-right');
@@ -10,7 +15,22 @@ var FeedBackBlock = document.querySelector('.feed-back__section .row');
 // tạo một mảng chứa địa chỉ từng list-product để khi click sang trái phải k bị loạn địa
 // chỉ giữa các list-product
 
+SearchIcon.addEventListener('click',function(){
+    searchblock.classList.add('unhide')
+    header.classList.add('down');
+})
+SearchInput.addEventListener('click',function(e){
+    e.stopPropagation();
+})
+searchblock.addEventListener('click',function(){
+    searchblock.classList.remove('unhide')
+    header.classList.remove('down');
+})
 
+LogIn.addEventListener('click',function(){
+    let UserOption = document.querySelector('.user-option')
+    UserOption.classList.toggle('unhide')
+})
 function MenuOption() {
     function OpenSubNav() {
         SubNav.style.display = 'block';

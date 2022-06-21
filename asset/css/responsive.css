@@ -139,6 +139,8 @@
     }
 }
 
+
+/* tablet */
 @media (max-width: 1024px) and (min-width: 740px) {
     #slider {
         height: 300px;
